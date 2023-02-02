@@ -1,12 +1,19 @@
 import java.util*;
 
 public class LinkList {
+    LinkedList<String> ll = new LinkedList<String>();
+
+    public void insertAtend() {
+        ll.add("E");
+        ll.add("G");
+        ll.add("E");
+
+    }
 
     public static void main(String args[]) {
 
-        LinkedList<String> ll = new LinkedList<String>();
+        // LinkedList<String> ll = new LinkedList<String>();
 
-        // Adding elements to the linked list
         ll.add("A");
         ll.add("B");
         ll.addLast("C");
