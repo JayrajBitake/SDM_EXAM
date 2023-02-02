@@ -2,25 +2,39 @@ import java.util*;
 
 public class LinkList {
     LinkedList<String> ll = new LinkedList<String>();
+    Scanner sc = new Scanner(System.in);
 
-    public void insertAtend() {
-        ll.add("E");
-        ll.add("G");
-        ll.add("E");
+    public static void insertAtend() {
+        int ch;
+        Switch(ch){
+
+            case1:
+            System.out.print("enter value to be inseted");
+            String s=sc.NextLine();
+            ll.add(s);
+            break;
+            default:
+             System.out.print("Wrong choice");
+
+        }
+        
+      
 
     }
 
-    public static void main(String args[]) {
+    public static void display() {
+        System.out.print(l1);
+    }
 
-        // LinkedList<String> ll = new LinkedList<String>();
+    public static void main(String args[]) {
 
         ll.add("A");
         ll.add("B");
         ll.addLast("C");
         ll.addFirst("D");
         ll.add(2, "E");
-
-        System.out.println(ll);
+        insertAtend();
+        display();
 
     }
 
